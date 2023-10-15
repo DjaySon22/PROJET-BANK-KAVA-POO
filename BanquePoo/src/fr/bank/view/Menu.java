@@ -33,7 +33,7 @@ public class Menu {
 				break;
 
 			default:
-				MyLibrary.afficher("err !!!");
+				MyLibrary.afficher("Une erreur est Survenue !!!");
 				break;
 			}
 		}
@@ -59,7 +59,7 @@ public class Menu {
 				TransactionCompte.virement(clientConnected);
 				break;
 			case 5:
-				
+				//Historique des transactions 
 				break;
 			case 6:
 				CompteBancaire c = TransactionCompte.createCompteBancaire();
@@ -74,7 +74,7 @@ public class Menu {
 				break;
 
 			default:
-				MyLibrary.afficher("err !!!");
+				MyLibrary.afficher("Une erreur est Survenue !!!");
 				break;
 			}
 		}

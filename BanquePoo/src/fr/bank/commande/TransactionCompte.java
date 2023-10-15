@@ -44,7 +44,7 @@ public class TransactionCompte {
 		double oldSolde = c.getSolde();
 		
 		c.prelevement(MyLibrary.saisieDouble("Montant du retrait "));
-		MyLibrary.afficher("Retrait terminé ! \n Ancien solde : " + oldSolde + " € \n Nouveau solde : " +  c.getSolde());
+		MyLibrary.afficher("Retrait terminé ! \n Ancien solde : " + oldSolde + " € \n Nouveau solde : " +  c.getSolde() + "€");
 	}
 	
 	public static void virement(Client client) {
@@ -52,6 +52,6 @@ public class TransactionCompte {
 		double oldSolde = c.getSolde();
 		
 		c.transfert(c, MyLibrary.saisieDouble("Montant du Virement "));
-		MyLibrary.afficher("Virement effectuer ! \n Montant du virement : " + oldSolde + " € \n Nouveau solde : " +  c.getSolde());
+		MyLibrary.afficher("Virement effectuer ! \n Montant du avant le virement : " + oldSolde + " € \n Nouveau solde : " +  c.getSolde() + "€");
 	}
 }

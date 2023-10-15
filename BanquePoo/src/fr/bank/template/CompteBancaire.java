@@ -40,7 +40,7 @@ public class CompteBancaire {
 		return soldeCompte += montant;
 	}
 	
-	public boolean prelevement( double montant) {
+	public boolean prelevement(double montant) {
             if (montant <= soldeCompte) {
             	soldeCompte -= montant;
                 return true;
